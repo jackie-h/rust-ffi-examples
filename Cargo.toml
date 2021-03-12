@@ -1,0 +1,12 @@
+[package]
+name = "rust_ffi_examples"
+version = "0.1.0"
+authors = ["jackie-h <10471950+jackie-h@users.noreply.github.com>"]
+edition = "2018"
+
+[workspace]
+members = [".", "cpp_examples", "rust_ffi"]
+
+[dependencies]
+cpp_examples = {path = "cpp_examples", version = "0.1.0"}
+rust_ffi = {path = "rust_ffi", version = "0.1.0"}
